@@ -18,17 +18,17 @@ O Iago Alves Blog é uma aplicação web construída como forma de estudo da lin
 ## Home Page (Página Principal)
 ![Index](https://github.com/iago159/Blog_Iago_Alves/blob/main/layout/homepage.png)
 
-## Posts
+## Publicações
 ![Posts](https://github.com/iago159/Blog_Iago_Alves/blob/main/layout/posts.png)
 
 ## Menu
 ![Menu](https://github.com/iago159/Blog_Iago_Alves/blob/main/layout/menu_on.png)
 
-## Novo Post
+## Nova Publicação
 ![Novo](https://github.com/iago159/Blog_Iago_Alves/blob/main/layout/new_post.png)
 
-## Editar Post
-![Editar](https://github.com/iago159/Blog_Iago_Alves/blob/main/layout/edit.png)
+## Editar Publicação
+![Editar](https://github.com/iago159/Blog_Iago_Alves/blob/main/layout/edit_post.png)
 
 # Autor
 
