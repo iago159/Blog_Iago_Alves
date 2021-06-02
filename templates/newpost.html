@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Add Post</title>
+{% endblock%}
+
+{% block body %}
+    <h1>Create New Blog Post:</h1>
+    <hr>
+
+    <br>
+    <form action="/posts/newpost" method='POST'>
+
+        <div class="input-group">
+            <label for="title" class="col-lg-1 input-group-text">Title</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control col-lg-5" name='title' id='title' placeholder="Enter Title"
+                    aria-label="Enter Title" required>
+            </div>
+        </div>
+        <br>
+        <div class="input-group">
+            <label for="author" class="col-lg-1 input-group-text">Author</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control col-lg-5" name='author' id='author' placeholder="Enter Author"
+                    aria-label="Enter Author">
+            </div>
+        </div>
+        <br>
+        <div class="input-group">
+            <label for="content" class="col-lg-1 input-group-text">Content</label>
+            <div class="col-lg-5">
+                <textarea class="form-control col-lg-5" name='content' id='content' placeholder="Enter Content"
+                    aria-label="Enter Content" rows="3" required></textarea>
+            </div>
+        </div>
+        <br>
+        <input type="submit" class="btn btn-success col-lg-1" value="Post">
+    </form>
+
+    <hr>
+
+{% endblock %}

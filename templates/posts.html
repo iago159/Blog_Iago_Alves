@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Posts</title>
+{% endblock %}
+
+
+{% block body %}
+<div>
+    <h1 style="display:inline">Blog Posts</h1>
+    <a style="margin-top: 10px;" href="/posts/newpost"><input type="submit" class="btn btn-success float-end"
+            value="New post"></a>
+</div>
+<hr>
+
+{% for post in posts %}
+
+<h2>{{post.title}}</h2>
+
+{% if post.author %}
+<small> Written by {{post.author}} on {{ post.data_posted.year }}-{{ post.data_posted.month }}-{{
+    post.data_posted.day}}</small>
+{% else %}
+<small> Written by Unknown on {{ post.data_posted.year }}-{{ post.data_posted.month }}-{{ post.data_posted.day}}</small>
+{% endif %}
+<br>
+<br>
+
+<p class="fs-4" style="white-space: pre-wrap;">{{post.content}}</p>
+<a href='/posts/delete/{{post.id}}'><button type="button" class="btn btn-danger col-lg-1">Delete</button></a>
+<a href='/posts/edit/{{post.id}}'><button type="button" class="btn btn-primary col-lg-1">Edit</button></a>
+<br>
+<hr>
+
+{% endfor %}
+
+{% endblock %}
