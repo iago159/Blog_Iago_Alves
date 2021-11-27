@@ -1,4 +1,4 @@
-# Iago ALves Blog
+# Iago Alves Blog
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/iago159/Blog_Iago_Alves/blob/main/LICENSE)
 
 # Sobre o projeto
